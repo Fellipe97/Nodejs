@@ -1,0 +1,37 @@
+instalar as dependecias que estão sendo usadas no projeto:
+npm install
+
+
+
+instalar o typescript global(executar o comando no cmd):
+npm install -g typescript
+
+inicializar o arquivo de configuração do type script:
+tsc --
+
+instalar dependencia (deixando o typescript )
+npm install --save-dev @types/node
+
+deixar o typescript monitorar alteração
+tsc -w
+
+biblioteca que valida os campos
+npm install validator
+Para facilitar o uso dele
+npm install --save-dev @types/validator
+
+nodemon = não precisa ficar startando direto
+npm install -g nodemon
+
+não precisar de 2 terminais(pro typescript e nodejs)
+npm install -g ts-node
+
+cirar o servidor
+npm install express
+
+Ter ajuda de autocompletar no typescript quando usar a biblioteca expresss
+npm install @types/express
+
+usar variaveis no html 
+npm install mustache-express
+npm install --save-dev @types/mustache-express
