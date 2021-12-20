@@ -14,6 +14,8 @@ server.engine('mustache', mustache());
 server.use(express.static(path.join(__dirname, '../public')));
 //server.use(express.static('public'));
 
+server.use(express.urlencoded({extended: true})); //permite que pega informações via POST dentro da rota
+
 server.use('/', mainRoutes);
 //server.use('/painel', painelRoutes);
 
