@@ -1,0 +1,32 @@
+Inicializar o projeto
+npm init -y
+
+Inicializar o typescript
+tsc --init
+
+
+
+Alterar alguns valores no tsconfig.json:
+"module": "commonjs",                                /* Specify what module code is generated. */
+"outDir": "./dist",
+"rootDir": "./src",                                  /* Specify the root folder within your source files. */
+"moduleResolution": "node",  
+
+
+Instalando algumas dependencias importantes
+npm install express mustache-express dotenv
+
+Ajuda para a utilização de cada dependencia
+npm install --save-dev @types/express @types/mustache-express @types/node
+
+
+npm install -g nodemon typescript ts-node
+
+
+Alterar package.json:
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon -e ts,json,mustache src/server.ts"
+}
+
+
