@@ -9,7 +9,7 @@ router.get('/', (req: Request, res: Response)=>{
         showOld = true
     }
     
-    res.render('home', {
+    res.render('pages/home', {
         name: 'Fellipe',
         lastName: 'Barros',
         permissao: 1,
@@ -24,14 +24,28 @@ router.get('/', (req: Request, res: Response)=>{
             'Outra frase qualquer'
         ]
     });
-})
+});
+
 
 router.get('/contato', (req: Request, res: Response)=>{
-    res.send('Formulário de contato');
-})
+    res.render('pages/contato');
+});
+
 
 router.get('/sobre', (req: Request, res: Response)=>{
-    res.send('Página institucional sobre a empresa');
-})
+    res.render('pages/sobre');
+});
+
+
+router.get('/nome',(req: Request, res: Response) => {
+    console.log(req.query.nome);
+
+    let nome: string = req.query.nome as string;
+    
+    
+    res.render('pages/nome',{
+        nome
+    });
+});
 
 export default router;
