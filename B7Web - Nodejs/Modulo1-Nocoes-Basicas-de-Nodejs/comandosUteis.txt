@@ -35,3 +35,6 @@ npm install @types/express
 usar variaveis no html 
 npm install mustache-express
 npm install --save-dev @types/mustache-express
+
+utilizar o .env
+npm install dotenv

@@ -11,13 +11,21 @@
     {{/showOld}}
 
     <hr/>
-
     <h2>Produtos</h2>
     <ul>
         {{#products}}
             {{>partials/productItem}}
         {{/products}}
     </ul>
+
+    <hr/>
+    <h2>Produtos a partir de R$12</h2>
+    <ul>
+        {{#expensives}}
+            {{>partials/productItem}}
+        {{/expensives}}
+    </ul>
+
     <hr/>
 
     <h2>Frases Motivacionais</h2>
@@ -30,7 +38,4 @@
         {{/frasesDoDia}}
     </ul>
     
-    <hr/>
-    <h1>PRÓXIMA AULA: MÓDULO1 VÍDEO 29</h1>
-
 {{>partials/footer}}
