@@ -7,7 +7,7 @@ Projeto feito no módulo 2 do curso Node + Typescript (www.B7web.com.br)
 `npm install`
 
 ### Para rodar o projeto
-`npm start`
+`npm start-dev`
 
 <h1>Projeto finalizado:</h1>
 
