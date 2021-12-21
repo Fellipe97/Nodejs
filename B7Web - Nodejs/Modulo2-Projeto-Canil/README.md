@@ -8,3 +8,5 @@ Projeto feito no módulo 2 do curso Node + Typescript (www.B7web.com.br)
 
 ### Para rodar o projeto
 `npm start`
+
+![image](https://user-images.githubusercontent.com/58015799/146972424-37466907-bdc1-4343-a9a0-358ab505587b.png)
