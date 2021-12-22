@@ -1,0 +1,35 @@
+## Caracteristicas Banco de dados ##
+
+----- MySQL vs PostgreSQL  -----
+
+- Os dois são open-source, mas o Postgre é mais.
+- Suportam todos os Sistemas Operacionais e linguagens.
+
+## Quem Usa?
+--- MySQL  
+- Facebook
+- Google
+- Github
+- Nasa
+- Netflix
+
+--- PostgreSQL
+- Apple
+- Facebook
+- Instagram
+- Skype
+- Spotify
+
+
+----- Diferenças -----
+
+MySQL não é case-sensitive !! = Fellipe === fellipe
+PostgreSQL é case-sensitive !! =  Fellipe !== fellipe
+
+
+--- Performance ---
+
+Geralmente para grandes volumes ou consultas complexas,
+o PostgreSQL tende a ser um pouco mais rápido.
+
+MySQL geralmente é mais rápido para pequenos volumes OU consultas simples.
