@@ -1,0 +1,13 @@
+npm install
+
+
+npm run start-dev
+
+
+npm install --save sequelize
+
+
+npm install --save-dev @types/sequelize
+
+
+npm install mysql2

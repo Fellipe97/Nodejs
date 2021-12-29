@@ -33,3 +33,28 @@ Geralmente para grandes volumes ou consultas complexas,
 o PostgreSQL tende a ser um pouco mais rápido.
 
 MySQL geralmente é mais rápido para pequenos volumes OU consultas simples.
+
+
+
+
+
+
+-- Adicionar no Banco --
+
+ // build + save = posso mudar a idade ao longo do codigo
+    const user = User.build({
+        name:'Beltrano'
+    });
+    let idade: number = 27;
+    user.age = idade;
+    await user.save();
+
+
+
+//create = adiciona na mesma hora no banco de dados
+    /*const user = await User.create({
+        name: 'Ciclano',
+        age:39
+    });	
+    console.log('Nome: ', user.name);
+    console.log('Age: ', user.age);*/
