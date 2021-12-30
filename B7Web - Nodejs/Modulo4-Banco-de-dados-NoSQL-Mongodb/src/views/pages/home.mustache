@@ -1,38 +1,27 @@
 {{>partials/header}}
 
-Opa {{name}} {{lastName}}, tudo bem?
-{{#showOld}}
-    Como vai a vida?
-{{/showOld}}
-{{^showOld}}
-    Beleza?
-{{/showOld}}
+<fieldset>
+    <legend>Adicionar Novo Usuário</legend>
+        <form method='POST' action="/novo-usuario">
+        <input type="text" name="firstName" placeholder="Digite seu nome" /> <br/>
+        <input type="text" name="lastName" placeholder="Digite seu sobrenome" /> <br/>
+        <input type="text" name="email" placeholder="Digite seu email" /> <br/>
+        <input type="text" name="age" placeholder="Digite sua idade" /> <br/>
+        <input type="text" name="interests" placeholder="Digite seus interesses" /> Obs: Separado por virgula. <br/><br/>
+        <input type="submit" value="Inserir" />
+    </form>
+</fieldset>
 
-<hr/>
-<h2>Produtos</h2>
+
+
+<h3>Usuários</h3>
 <ul>
-    {{#products}}
-        {{>partials/productItem}}
-    {{/products}}
-</ul>
-
-<hr/>
-<h2>Produtos a partir de R$ 12</h2>
-<ul>
-    {{#expensives}}
-        {{>partials/productItem}}
-    {{/expensives}}
-</ul>
-
-<hr/>
-
-<ul>
-    {{#frasesDoDia}}
-        <li>{{.}}</li>
-    {{/frasesDoDia}}
-    {{^frasesDoDia}}
-        Não há frases motivacionais hoje.
-    {{/frasesDoDia}}
+{{#users}}
+    <li>
+    {{name.firstName}} idade: <a href="/usuario/{{_id}}/diminuirIdade">diminuir </a>{{age}} anos <a href="/usuario/{{_id}}/aumentarIdade"> aumentar</a>
+    <a href="/usuario/{{_id}}/excluirIdade" style='margin-left: 10px;'> excluir</a>
+    </li>
+{{/users}}
 </ul>
 
 {{>partials/footer}}

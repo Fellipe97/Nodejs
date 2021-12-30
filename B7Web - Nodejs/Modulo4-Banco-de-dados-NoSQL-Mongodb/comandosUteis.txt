@@ -1,0 +1,4 @@
+npm install mongoose
+
+npm install @types/mongoose -D
+
