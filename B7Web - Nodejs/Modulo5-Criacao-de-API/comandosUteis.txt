@@ -1,0 +1,19 @@
+============ Criando um projeto base: ============
+
+- npm init -y
+
+- npm install dotenv express mysql2 sequelize validator
+
+- tsc --init
+
+- editar o tsconfig.json:
+
+"module": "commonjs",  
+"outDir": "./dist",
+"rootDir": "./src",
+"moduleResolution": "node",
+
+- npm install -D @types/express @types/node @types/sequelize @types/validator 
+
+
+===================================================
