@@ -21,3 +21,14 @@ PUT https://meusite.com.br/api/user/10 (name: 'novoNome', age: 115)             
 POST https://meusite.com.br/api/users (name: 'novoNome', age: 115)              //adicionar um usuário novo
 DELETE https://meusite.com.br/api/user/10                                       //deletar um usuario
 
+
+
+
+
+CORS:
+Cross-origin Resource Sharing = Troca de recurso de origem diferente
+
+
+Software: Postman
+Tem a funcionalidade de testar APIS e salvar os testes na sua conta.
+

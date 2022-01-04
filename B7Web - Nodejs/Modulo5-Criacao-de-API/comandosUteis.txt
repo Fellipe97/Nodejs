@@ -17,3 +17,7 @@
 
 
 ===================================================
+
+
+- npm install cors 
+- npm install -D @types/cors
